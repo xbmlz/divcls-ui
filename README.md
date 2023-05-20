@@ -9,22 +9,22 @@
 ### Layout
 
 - Divider
-  - [x] vertical
-  - [x] horizontal
-  - [x] dashed
-  - [x] text-left
-  - [x] text-right
-  - [x] text-center
+  - [x] Basic Usage
+  - [x] With Text
+  - [x] Vertical Divider
 
 - Grid
-  - Row
-    - [x] gutter
-    - [x] justify
-    - [x] align
-  - Col
-    - [x] span
-    - [x] offset
-    - [x] order
+  - [x] Basic
+  - [x] Offset of Col
+  - [x] Interval of Grid
+  - [ ] Horizontal Layout
+  - [ ] Vertical Layout
+  - [ ] Order
+  - [ ] Responsive Layout
+  - [ ] Advanced Responsive Layout
+  - [ ] Flex
+  - [ ] Grid Layout
+  - [ ] Responsive Grid Layout
 
 - Layout
   - [ ] header
@@ -33,9 +33,9 @@
   - [ ] sider
 
 - Space
-  - [ ] vertical
-  - [ ] horizontal
-  - [ ] size - mini | small | middle | large
-  - [ ] align - start | end | center | baseline
-  - [ ] wrap
-  - [ ] fill
+  - [x] Basic
+  - [x] Vertical
+  - [ ] Size - mini | small | middle | large
+  - [ ] Align - start | end | center | baseline
+  - [ ] Wrap
+  - [x] Split

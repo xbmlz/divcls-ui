@@ -1,3 +1,4 @@
 .row {
-  @apply c-white text-center my-2 bg-gray-2
+  @apply c-white text-center my-2
 }
+

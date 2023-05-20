@@ -17,12 +17,13 @@ export default [
     'divider-h': 'relative clear-both w-full min-w-full max-w-full border-b-1px border-solid border-neutral-3 my-5',
     'divider-v': 'inline-block min-w-px max-w-px h-1em mx-3 v-mid border-l-1px border-solid border-neutral-3',
     'divider-dashed': 'border-b-1px !border-dashed border-neutral-3',
-    'divider-text': 'absolute top-50% box-border px-4 c-neutral-9 lh-2 bg-white translate-y--50% divider-text-center',
+    'divider-text': 'absolute top-50% box-border px-4 c-neutral-9 lh-2 bg-white translate-y--50% translate-x--50% left-50%',
     'divider-text-left': 'divider-text left-5%',
     'divider-text-right': 'divider-text right-5% left-auto translate-x-0',
-    'divider-text-center': 'divider-text translate-x--50% left-50%',
     // grid
-    'row': 'flex flex-row flex-wrap relative box-border',
+    'row': 'flex flex-row flex-wrap relative box-border row-justify-start row-row-align-start',
+    'row-justify-start': 'justify-start',
+    'row-row-align-start': 'items-start',
     'col': 'flex-grow-0 flex-shrink-0 flex-basis-full max-w-full',
     // space
     'space': 'space-h',
@@ -49,11 +50,5 @@ export default [
     'btn-round': 'rd-large',
     'btn-circle': 'min-w-8 rd-circle ps-0 pe-0',
   },
-  // sm md lg xl
-  [/^col-(sm|md|lg|xl)-(\d+)$/, ([, s, t]) => {
-    console.log(s)
-    console.log(t)
-    return ''
-  }],
 ] as UserShortcuts<Theme>
 

@@ -38,6 +38,7 @@ export default function Layout() {
       {/* 栅格 */}
       <div>
         <h1 class="text-2xl my-2">Grid 栅格</h1>
+        {/* 基础栅格 */}
         <div class="divider">
           <span class="divider-text-left">基础栅格</span>
         </div>
@@ -108,76 +109,61 @@ export default function Layout() {
         <div class="divider">
           <span class="divider-text-left">区块间隔</span>
         </div>
+        <p>Horizontal</p>
         <div class="row row-gutter-16">
-          <div class="col-12 col-sm-4">
+          <div class="col-12">
             <div class="p-2 bg-blue-4">col - 12</div>
           </div>
           <div class="col-12">
             <div class="p-2 bg-blue-6">col - 12</div>
           </div>
         </div>
-      </div>
-      <div>
-        {/* <h1 class="text-2xl my-2">Grid 栅格</h1>
+        <p>Responsive</p>
+        <div class="row row-gutter-md-8 row-gutter-lg-24 row-gutter-xl-32">
+          <div class="col-6">
+            <div class="p-2 bg-blue-4">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-6">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-4">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-6">col - 6</div>
+          </div>
+        </div>
+        <p>Horizontal and Vertical</p>
+        <div class="row row-gutter-24-12">
+          <div class="col-6">
+            <div class="p-2 bg-blue-4">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-6">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-4">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-6">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-4">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-6">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-4">col - 6</div>
+          </div>
+          <div class="col-6">
+            <div class="p-2 bg-blue-6">col - 6</div>
+          </div>
+        </div>
+
         <div class="divider">
-          <span class="divider-text-left">基础用法</span>
+          <span class="divider-text-left">水平布局</span>
         </div>
-        <div class="grid-4 grid-gap-x-12">
-          <div class="grid-col">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-        </div> */}
-
-        {/* <div class="divider">
-          <span class="divider-text-left">间隔</span>
-        </div>
-        <div class="grid-4 grid-gap-x-12 grid-gap-y-8">
-          <div class="grid-col">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-        </div> */}
-
-        {/* <div class="divider">
-          <span class="divider-text-left">偏移</span>
-        </div>
-        <div class="grid-4 grid-gap-x-12">
-          <div class="grid-col grid-col-offset-1">
-            <div class="bg-blue-4 h30"></div>
-          </div>
-          <div class="grid-col grid-col-offset-1">
-            <div class="bg-blue-6 h30"></div>
-          </div>
-        </div> */}
       </div>
     </div>
   )
