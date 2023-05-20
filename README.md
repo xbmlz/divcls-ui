@@ -8,7 +8,7 @@
 
 ### Layout
 
-- [x] Divider
+- Divider
   - [x] vertical
   - [x] horizontal
   - [x] dashed
@@ -16,26 +16,26 @@
   - [x] text-right
   - [x] text-center
 
-- [x] Grid
-  - [x] Row
+- Grid
+  - Row
     - [x] gutter
     - [x] justify
     - [x] align
-  - [x] Col
+  - Col
     - [x] span
     - [x] offset
     - [x] order
 
 - Layout
-  - [] header
-  - [] content
-  - [] footer
-  - [] sider
+  - [ ] header
+  - [ ] content
+  - [ ] footer
+  - [ ] sider
 
 - Space
-  - [] vertical
-  - [] horizontal
-  - [] size - mini | small | middle | large
-  - [] align - start | end | center | baseline
-  - [] wrap
-  - [] fill
+  - [ ] vertical
+  - [ ] horizontal
+  - [ ] size - mini | small | middle | large
+  - [ ] align - start | end | center | baseline
+  - [ ] wrap
+  - [ ] fill
