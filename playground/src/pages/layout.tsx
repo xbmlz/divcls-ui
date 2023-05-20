@@ -109,7 +109,7 @@ export default function Layout() {
           <span class="divider-text-left">区块间隔</span>
         </div>
         <div class="row row-gutter-16">
-          <div class="col-12">
+          <div class="col-12 col-sm-4">
             <div class="p-2 bg-blue-4">col - 12</div>
           </div>
           <div class="col-12">

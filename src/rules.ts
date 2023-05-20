@@ -57,5 +57,5 @@ export default [
     ([, d]) => ({
       'margin-left': `${(Number(d) / 24) * 100}%`,
     }),
-  ],
+  ]
 ] as Rule[]

@@ -42,12 +42,14 @@
     "release": "bumpp --commit --tag --push && pnpm publish"
   },
   "peerDependencies": {
-    "@unocss/core": "^0.51.13"
+    "@unocss/core": "^0.51.13",
+    "@unocss/preset-uno": "^0.51.13"
   },
   "devDependencies": {
     "@types/node": "^17.0.43",
     "@unocss/core": "^0.51.13",
     "@unocss/eslint-config": "^0.51.13",
+    "@unocss/preset-uno": "^0.51.13",
     "@xbmlz/eslint-config-prettier": "^0.1.17",
     "@xbmlz/eslint-config-solid": "^0.1.17",
     "bumpp": "^7.2.0",
