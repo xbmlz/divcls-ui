@@ -16,16 +16,10 @@ export const shortcuts: StaticShortcutMap = {
   'divider-dashed': 'border-b-1px !border-dashed border-neutral-3',
   'divider-text': 'absolute top-50% box-border px-4 c-neutral-9 lh-2 bg-white translate-y--50% divider-text-center',
   'divider-text-left': 'divider-text left-5%',
-  'divider-text-right': 'divider-text right-5% left-auto',
+  'divider-text-right': 'divider-text right-5% left-auto translate-x-0',
   'divider-text-center': 'divider-text translate-x--50% left-50%',
   // grid
-  'row': 'flex flex-row flex-wrap min-w-0',
-  'row-top': 'items-start',
-  'row-bottom': 'items-end',
-  'row-center': 'justify-center',
-  'row-middle': 'items-center',
-  'row-between': 'justify-between',
-  'row-around': 'justify-around',
+  'row': 'flex flex-row flex-wrap relative box-border',
   'col': 'flex-grow-0 flex-shrink-0 flex-basis-full max-w-full',
   // space
   'space': 'space-h',
