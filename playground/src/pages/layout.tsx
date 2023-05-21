@@ -44,40 +44,40 @@ export default function Layout() {
         </div>
         <div class="row">
           <div class="col-24">
-            <div class="p-2 bg-blue-6">col-24</div>
+            <div>col-24</div>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-            <div class="p-2 bg-blue-4">col-12</div>
+            <div>col-12</div>
           </div>
           <div class="col-12">
-            <div class="p-2 bg-blue-6">col-12</div>
+            <div>col-12</div>
           </div>
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="p-2 bg-blue-4">col-8</div>
+            <div>col-8</div>
           </div>
           <div class="col-8">
-            <div class="p-2 bg-blue-6">col-8</div>
+            <div>col-8</div>
           </div>
           <div class="col-8">
-            <div class="p-2 bg-blue-4">col-8</div>
+            <div>col-8</div>
           </div>
         </div>
         <div class="row">
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col-6</div>
+            <div>col-6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col-6</div>
+            <div>col-6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col-6</div>
+            <div>col-6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col-6</div>
+            <div>col-6</div>
           </div>
         </div>
 
@@ -86,23 +86,23 @@ export default function Layout() {
         </div>
         <div class="row">
           <div class="col-8">
-            <div class="p-2 bg-blue-4">col - 8</div>
+            <div>col - 8</div>
           </div>
           <div class="col-8 col-offset-8">
-            <div class="p-2 bg-blue-6">col - 8 | offset - 8</div>
+            <div>col - 8 | offset - 8</div>
           </div>
         </div>
         <div class="row">
           <div class="col-6 col-offset-8">
-            <div class="p-2 bg-blue-4">col - 6 | offset - 8</div>
+            <div>col - 6 | offset - 8</div>
           </div>
           <div class="col-6 col-offset-4">
-            <div class="p-2 bg-blue-6">col - 6 | offset - 4</div>
+            <div>col - 6 | offset - 4</div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-offset-8">
-            <div class="p-2 bg-blue-4">col - 12 | offset - 8</div>
+            <div>col - 12 | offset - 8</div>
           </div>
         </div>
 
@@ -112,57 +112,187 @@ export default function Layout() {
         <p>Horizontal</p>
         <div class="row row-gutter-16">
           <div class="col-12">
-            <div class="p-2 bg-blue-4">col - 12</div>
+            <div>col - 12</div>
           </div>
           <div class="col-12">
-            <div class="p-2 bg-blue-6">col - 12</div>
+            <div>col - 12</div>
           </div>
         </div>
         <p>Responsive</p>
         <div class="row row-gutter-md-8 row-gutter-lg-24 row-gutter-xl-32">
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col - 6</div>
+            <div>col - 6</div>
           </div>
         </div>
         <p>Horizontal and Vertical</p>
         <div class="row row-gutter-24-12">
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-4">col - 6</div>
+            <div>col - 6</div>
           </div>
           <div class="col-6">
-            <div class="p-2 bg-blue-6">col - 6</div>
+            <div>col - 6</div>
           </div>
         </div>
 
         <div class="divider">
           <span class="divider-text-left">水平布局</span>
+        </div>
+        <p>Arrange left</p>
+        <div class="row row-start">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <p>Arrange center</p>
+        <div class="row row-jc">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <p>Arrange right</p>
+        <div class="row row-je">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <p>Space around</p>
+        <div class="row row-jsa">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <p>Space between</p>
+        <div class="row row-jsb">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <div class="divider">
+          <span class="divider-text-left">垂直布局</span>
+        </div>
+        <p>Arrange top</p>
+        <div class="row row-is">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <p>Arrange center</p>
+        <div class="row row-ic">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+        </div>
+
+        <p>Arrange bottom</p>
+        <div class="row row-ie">
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
+          <div class="col-4">
+            <div>col-4</div>
+          </div>
         </div>
       </div>
     </div>

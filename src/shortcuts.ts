@@ -22,8 +22,14 @@ export default [
     'divider-text-right': 'divider-text right-5% left-auto translate-x-0',
     // grid
     'row': 'flex flex-row flex-wrap relative box-border row-justify-start row-row-align-start',
-    'row-justify-start': 'justify-start',
-    'row-row-align-start': 'items-start',
+    'row-js': 'justify-start',
+    'row-jc': 'justify-center',
+    'row-je': 'justify-end',
+    'row-jsb': 'justify-between',
+    'row-jsa': 'justify-around',
+    'row-is': 'items-start',
+    'row-ic': 'items-center',
+    'row-ie': 'items-end',
     'col': 'flex-grow-0 flex-shrink-0 flex-basis-full max-w-full',
     // space
     'space': 'space-h',

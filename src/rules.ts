@@ -12,7 +12,7 @@ const getGutterStyles = (rawSelector: string, span: string, theme: Theme, size: 
     padding-right: ${Number(span) / 2}px;
   }
   `
-  if (theme) {
+  if (size) {
     return `
     @media (min-width: ${theme.breakpoints?.[size]}) {
           ${styles}
