@@ -1,4 +1,3 @@
-// import fs from 'node:fs'
 import path from 'node:path'
 import type { Plugin } from 'vite'
 
@@ -54,7 +53,6 @@ export function MarkdownTransform(): Plugin {
         ],
         append.footers
       )
-      console.log(md)
       return md
     },
   }
