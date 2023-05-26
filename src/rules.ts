@@ -1,7 +1,12 @@
 import type { Rule } from '@unocss/core'
 import type { Theme } from '@unocss/preset-uno'
 
-const getGutterStyles = (rawSelector: string, span: string, theme: Theme, size: string) => {
+const getGutterResponsiveStyles = (
+  rawSelector: string,
+  span: string,
+  theme: Theme,
+  size: string
+) => {
   const styles = `
   .${rawSelector} {
     margin-left: -${Number(span) / 2}px;
@@ -15,7 +20,24 @@ const getGutterStyles = (rawSelector: string, span: string, theme: Theme, size: 
   if (size) {
     return `
     @media (min-width: ${theme.breakpoints?.[size]}) {
-          ${styles}
+      ${styles}
+    }
+    `
+  }
+  return styles
+}
+
+const getColResponsiveStyles = (rawSelector: string, span: string, theme: Theme, size: string) => {
+  const styles = `
+  .${rawSelector} {
+    max-width: ${(Number(span) / 24) * 100}%;
+    flex-basis: ${(Number(span) / 24) * 100}%;
+  }
+  `
+  if (size) {
+    return `
+    @media (min-width: ${theme.breakpoints?.[size]}) {
+      ${styles}
     }
     `
   }
@@ -50,26 +72,29 @@ export default [
     }),
   ],
   // row
-  [/^row-gutter-(\d+)$/, ([, d], { rawSelector }) => getGutterStyles(rawSelector, d, {}, '')],
+  [
+    /^row-gutter-(\d+)$/,
+    ([, d], { rawSelector }) => getGutterResponsiveStyles(rawSelector, d, {}, ''),
+  ],
   [
     /^row-gutter-xs-(\d+)$/,
-    ([, s], { rawSelector, theme }) => getGutterStyles(rawSelector, s, theme, 'xs'),
+    ([, s], { rawSelector, theme }) => getGutterResponsiveStyles(rawSelector, s, theme, 'xs'),
   ],
   [
     /^row-gutter-sm-(\d+)$/,
-    ([, s], { rawSelector, theme }) => getGutterStyles(rawSelector, s, theme, 'sm'),
+    ([, s], { rawSelector, theme }) => getGutterResponsiveStyles(rawSelector, s, theme, 'sm'),
   ],
   [
     /^row-gutter-md-(\d+)$/,
-    ([, s], { rawSelector, theme }) => getGutterStyles(rawSelector, s, theme, 'md'),
+    ([, s], { rawSelector, theme }) => getGutterResponsiveStyles(rawSelector, s, theme, 'md'),
   ],
   [
     /^row-gutter-lg-(\d+)$/,
-    ([, s], { rawSelector, theme }) => getGutterStyles(rawSelector, s, theme, 'lg'),
+    ([, s], { rawSelector, theme }) => getGutterResponsiveStyles(rawSelector, s, theme, 'lg'),
   ],
   [
     /^row-gutter-xl-(\d+)$/,
-    ([, s], { rawSelector, theme }) => getGutterStyles(rawSelector, s, theme, 'xl'),
+    ([, s], { rawSelector, theme }) => getGutterResponsiveStyles(rawSelector, s, theme, 'xl'),
   ],
   [
     /^row-gutter-(\d+)-(\d+)$/,
@@ -85,15 +110,34 @@ export default [
   // col
   [
     /^col-(\d+)$/,
-    ([, d]) => ({
-      'max-width': `${(Number(d) / 24) * 100}%`,
-      'flex-basis': `${(Number(d) / 24) * 100}%`,
-    }),
+    ([, d], { rawSelector, theme }) => getColResponsiveStyles(rawSelector, d, theme, ''),
   ],
   [
     /^col-offset-(\d+)$/,
     ([, d]) => ({
       'margin-left': `${(Number(d) / 24) * 100}%`,
     }),
+  ],
+  [
+    /^col-order-(\d+)$/,
+    ([, d]) => ({
+      order: Number(d),
+    }),
+  ],
+  [
+    /^col-sm-(\d+)$/,
+    ([, d], { rawSelector, theme }) => getColResponsiveStyles(rawSelector, d, theme, 'sm'),
+  ],
+  [
+    /^col-md-(\d+)$/,
+    ([, d], { rawSelector, theme }) => getColResponsiveStyles(rawSelector, d, theme, 'md'),
+  ],
+  [
+    /^col-lg-(\d+)$/,
+    ([, d], { rawSelector, theme }) => getColResponsiveStyles(rawSelector, d, theme, 'lg'),
+  ],
+  [
+    /^col-xl-(\d+)$/,
+    ([, d], { rawSelector, theme }) => getColResponsiveStyles(rawSelector, d, theme, 'xl'),
   ],
 ] as Rule<Theme>[]

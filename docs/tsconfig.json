@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "guide": [
+        "./guide/*"
+      ]
+    },
+    "types": ["vite/client", "./auto-imports", "node"]
+  },
+  "exclude": [
+    "**/dist/**"
+  ],
+  "include": ["**/*", ".vitepress/**/*"],
+}

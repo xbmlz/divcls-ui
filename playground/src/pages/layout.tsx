@@ -250,13 +250,13 @@ export default function Layout() {
         <p>Arrange top</p>
         <div class="row row-is">
           <div class="col-4">
-            <div>col-4</div>
+            <div class="h-20">col-4</div>
           </div>
           <div class="col-4">
             <div>col-4</div>
           </div>
           <div class="col-4">
-            <div>col-4</div>
+            <div class="h-16">col-4</div>
           </div>
           <div class="col-4">
             <div>col-4</div>
@@ -266,13 +266,13 @@ export default function Layout() {
         <p>Arrange center</p>
         <div class="row row-ic">
           <div class="col-4">
-            <div>col-4</div>
+            <div class="h-20">col-4</div>
           </div>
           <div class="col-4">
             <div>col-4</div>
           </div>
           <div class="col-4">
-            <div>col-4</div>
+            <div class="h-16">col-4</div>
           </div>
           <div class="col-4">
             <div>col-4</div>
@@ -282,17 +282,85 @@ export default function Layout() {
         <p>Arrange bottom</p>
         <div class="row row-ie">
           <div class="col-4">
-            <div>col-4</div>
+            <div class="h-20">col-4</div>
           </div>
           <div class="col-4">
             <div>col-4</div>
           </div>
           <div class="col-4">
-            <div>col-4</div>
+            <div class="h-16">col-4</div>
           </div>
           <div class="col-4">
             <div>col-4</div>
           </div>
+        </div>
+
+        <div class="divider">
+          <span class="divider-text-left">排序</span>
+        </div>
+        <div class="row row-start">
+          <div class="col-4 col-order-4">
+            <div>1 col-order-4</div>
+          </div>
+          <div class="col-4 col-order-3">
+            <div>2 col-order-3</div>
+          </div>
+          <div class="col-4 col-order-2">
+            <div>3 col-order-2</div>
+          </div>
+          <div class="col-4 col-order-1">
+            <div>4 col-order-1</div>
+          </div>
+        </div>
+
+        <div class="divider">
+          <span class="divider-text-left">响应式布局</span>
+        </div>
+        <div class="row row-start">
+          <div class="col-sm-4 col-md-6 col-lg-8 col-xl-10">
+            <div>1 col-order-4</div>
+          </div>
+          <div class="col-sm-16 col-md-12 col-lg-8 col-xl-4">
+            <div>2 col-order-3</div>
+          </div>
+          <div class="col-sm-4 col-md-6 col-lg-8 col-xl-10">
+            <div>3 col-order-2</div>
+          </div>
+        </div>
+
+        <div class="divider">
+          <span class="divider-text-left">布局 Layout</span>
+        </div>
+        <p>基本用法</p>
+        <div class="layout h-400px my-2">
+          <div class="layout-header">Header</div>
+          <div class="layout-content">Content</div>
+          <div class="layout-footer">Footer</div>
+        </div>
+        <div class="layout h-400px my-2">
+          <div class="layout-header">Header</div>
+          <div class="layout layout-has-sider">
+            <div class="layout-sider">Sider</div>
+            <div class="layout-content">Content</div>
+          </div>
+          <div class="layout-footer">Footer</div>
+        </div>
+        <div class="layout h-400px my-2">
+          <div class="layout-header">Header</div>
+          <div class="layout layout-has-sider">
+            <div class="layout-content">Content</div>
+            <div class="layout-sider">Sider</div>
+          </div>
+          <div class="layout-footer">Footer</div>
+        </div>
+        <div class="layout h-400px my-2">
+          <div class="layout-header">Header</div>
+          <div class="layout layout-has-sider">
+            <div class="layout-sider" style="width: 64px;">Sider</div>
+            <div class="layout-sider" style="width: 206px; margin-left: 1px;">Sider</div>
+            <div class="layout-content">Content</div>
+          </div>
+          <div class="layout-footer">Footer</div>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 .row {
-  @apply c-white text-center my-2
+  @apply c-white text-center my-2 bg-neutral-2
 }
 
 /* 所有col-开头元素得子元素 2n+1 */
@@ -9,4 +9,20 @@
 
 [class^="col-"]:nth-child(2n) > * {
   @apply p2 bg-blue-6
+}
+
+.layout-content, .layout-header, .layout-footer, .layout-sider  {
+  @apply flex flex-col justify-center c-white text-center
+}
+
+.layout-header, .layout-footer {
+  @apply h-64px bg-blue-4
+}
+
+.layout-content {
+  @apply bg-blue-6
+}
+
+.layout-sider {
+  @apply w-200px bg-blue-3
 }

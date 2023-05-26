@@ -5,12 +5,6 @@ import type {Theme} from '@unocss/preset-uno'
 
 export default [
   {
-    // border radius
-    'rd-none': 'rd-0',
-    'rd-small': 'rd-0.6',
-    'rd-medium': 'rd-0.8',
-    'rd-large': 'rd-4',
-    'rd-circle': 'rd-50%',
     // layout
     // divider
     'divider': 'divider-h',
@@ -21,7 +15,7 @@ export default [
     'divider-text-left': 'divider-text left-5%',
     'divider-text-right': 'divider-text right-5% left-auto translate-x-0',
     // grid
-    'row': 'flex flex-row flex-wrap relative box-border row-justify-start row-row-align-start',
+    'row': 'flex flex-row flex-wrap relative box-border row-js row-is',
     'row-js': 'justify-start',
     'row-jc': 'justify-center',
     'row-je': 'justify-end',
@@ -39,6 +33,13 @@ export default [
     'space-small': 'gap-2',
     'space-medium': 'gap-4',
     'space-large': 'gap-6',
+    // layout
+    'layout': 'flex flex-grow-1 flex-shrink-1 flex-basis-auto flex-col m-0 p-0',
+    'layout-header': 'flex-grow-0 flex-shrink-0 flex-basis-auto box-border m-0',
+    'layout-footer': 'flex-grow-0 flex-shrink-0 flex-basis-auto m-0',
+    'layout-content': 'flex-grow-1 flex-shrink-1 flex-basis-auto',
+    'layout-sider': 'relative flex-grow-0 flex-shrink-0 flex-basis-auto m-0 p-0 transition-width-2',
+    'layout-has-sider': 'flex-row',
     // button
     'btn': 'relative inline-flex items-center justify-center box-border font-400 truncate cursor-pointer select-none transition-1 btn-default btn-medium',
     'btn-primary': 'bg-blue-6 c-white b-1px b-solid b-transparent hover:bg-blue-5 active:bg-blue-7',
@@ -49,12 +50,12 @@ export default [
     'btn-dashed': 'bg-neutral-2 c-neutral-8 b-1px b-dashed b-neutral-3 hover:bg-neutral-3 hover:b-neutral-4 active:bg-neutral-4 active:b-neutral-5',
     'btn-outline': 'bg-transparent c-blue-6 b-1px b-solid b-blue-6 !hover:bg-transparent hover:c-blue-5 hover:b-blue-5 active:c-blue-7 active:b-blue-7',
     'btn-text': 'bg-transparent c-blue-6 b-1px b-solid b-transparent hover:c-blue-5 hover:b-transparent active:c-blue-7 active:b-neutral-3',
-    'btn-mini': 'h-6 text-xs px-3 rd-small',
-    'btn-small': 'h-7 text-sm px-4 rd-small',
-    'btn-medium': 'h-8 text-sm px-4 rd-small',
-    'btn-large': 'h-9 text-sm px-5 rd-small',
-    'btn-round': 'rd-large',
-    'btn-circle': 'min-w-8 rd-circle ps-0 pe-0',
+    'btn-mini': 'h-6 text-xs px-3 rd-sm',
+    'btn-small': 'h-7 text-sm px-4 rd-sm',
+    'btn-medium': 'h-8 text-sm px-4 rd-sm',
+    'btn-large': 'h-9 text-sm px-5 rd-sm',
+    'btn-round': 'rd-lg',
+    'btn-circle': 'min-w-8 rd-circle ps-0 pe-0 rd-50%',
   },
 ] as UserShortcuts<Theme>
 

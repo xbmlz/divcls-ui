@@ -17,10 +17,10 @@
   - [x] Basic
   - [x] Offset of Col
   - [x] Interval of Grid
-  - [ ] Horizontal Layout
-  - [ ] Vertical Layout
-  - [ ] Order
-  - [ ] Responsive Layout
+  - [x] Horizontal Layout
+  - [x] Vertical Layout
+  - [x] Order
+  - [x] Responsive Layout
   - [ ] Advanced Responsive Layout
   - [ ] Flex
   - [ ] Grid Layout
