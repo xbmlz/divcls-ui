@@ -5,12 +5,15 @@ lang: en-US
 
 # Button
 
-Commonly used button.
+To trigger an operation.
 
 ## Basic usage
 
-:::demo Use `type`, `plain`, `round` and `circle` to define Button's style.
+:::demo Button is divided into five types: `primary`, `secondary`, `dashed`, `outline`, `text`.
 
 button/basic
 
 :::
+
+
+

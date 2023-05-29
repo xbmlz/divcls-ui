@@ -34,13 +34,22 @@ export default defineConfig({
           items: [
             { text: 'Installation', link: '/guide/install' },
             { text: 'Usage', link: '/guide/usage' },
+            { text: 'Colors', link: '/guide/colors' },
+            { text: 'Size', link: '/guide/size' },
           ],
         },
       ],
       '/components': [
         {
           text: 'General',
-          items: [{ text: 'Button', link: '/components/button' }],
+          items: [
+            { text: 'Button', link: '/components/button' },
+            { text: 'Icon', link: '/components/icon' },
+          ],
+        },
+        {
+          text: 'Layout',
+          items: [{ text: 'Divide', link: '/components/divider' }],
         },
       ],
     },

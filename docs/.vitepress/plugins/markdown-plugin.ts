@@ -32,7 +32,7 @@ export function markdownPlugin(md: MarkdownIt) {
         }
         if (!source) throw new Error(`Incorrect source file: ${sourceFile}`)
         // <template>xxx</template> -> xxx
-        source = source.replace(/<template>([\S\s]*)<\/template>/, '$1')
+        // source = source.replace(/<template>([\S\s]*)<\/template>/, '$1')
         const highlightedCode = md.options.highlight!(source, 'vue', '')
         const componentCode = `
         <Demo :demos="demos" source="${encodeURIComponent(
