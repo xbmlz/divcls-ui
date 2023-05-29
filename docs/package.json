@@ -2,15 +2,20 @@
   "name": "docs",
   "version": "1.0.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
+    "vue": "^3.3.4"
+  },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.16",
     "@types/markdown-it": "^12.2.3",
@@ -19,10 +24,5 @@
     "unplugin-auto-import": "^0.16.2",
     "unplugin-vue-components": "^0.24.1",
     "vitepress": "1.0.0-beta.1"
-  },
-  "dependencies": {
-    "markdown-it": "^13.0.1",
-    "markdown-it-container": "^3.0.0",
-    "vue": "^3.3.4"
   }
 }

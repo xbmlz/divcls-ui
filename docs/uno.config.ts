@@ -22,5 +22,12 @@ export default defineConfig({
     presetDivcls(),
   ],
   transformers: [transformerVariantGroup(), transformerDirectives()],
-  configDeps: ['../src/rules.ts', '../src/shortcuts.ts', '../src/theme.ts', '../src/index.ts'],
+  configDeps: [
+    '../src/shortcuts/index.ts',
+    '../src/shortcuts/space.ts',
+    '../src/shortcuts/divider.ts',
+    '../src/rules.ts',
+    '../src/theme.ts',
+    '../src/index.ts',
+  ],
 })

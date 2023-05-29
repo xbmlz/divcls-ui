@@ -7,7 +7,7 @@ export default [
   {
     // layout
     // divider
-    'divider': 'divider-horizontal',
+    'divider': 'divider-horizontal [&::before]-bg-red',
     'divider-horizontal': 'relative clear-both w-full min-w-full max-w-full border-b-1px border-solid border-neutral-3 my-5',
     'divider-vertical': 'inline-block min-w-px max-w-px h-1em mx-3 v-mid border-l-1px border-solid border-neutral-3',
     'divider-dashed': 'border-b-1px !border-dashed border-neutral-3',

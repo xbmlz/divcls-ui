@@ -2,6 +2,7 @@ import type { Theme } from '@unocss/preset-uno'
 
 export default {
   colors: {
+    baseBorder: '#DCDFE6',
     primary: '#4B5CC4',
     primaryHover: '#6577D0',
     primaryActive: '#303CA6',

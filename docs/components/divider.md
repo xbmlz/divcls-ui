@@ -15,6 +15,13 @@ divider/basic
 
 :::
 
+## Vertical
+
+:::demo Use `divider-vertical` to divide the content vertically.
+
+divider/vertical
+
+:::
 
 ## With Text
 
@@ -24,10 +31,4 @@ divider/with-text
 
 :::
 
-## Vertical
 
-:::demo Use `divider-vertical` to divide the content vertically.
-
-divider/vertical
-
-:::

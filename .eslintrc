@@ -1,3 +1,13 @@
 {
-  "extends": ["@xbmlz/eslint-config-solid", "@xbmlz/eslint-config-prettier", "@unocss"]
+  "extends": ["@xbmlz/eslint-config-solid", "@xbmlz/eslint-config-prettier", "@unocss"],
+  // /* eslint-disable prettier/prettier */
+  "overrides": [
+    // disable prettier/prettier
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "prettier/prettier": "off"
+      }
+    }
+  ]
 }
