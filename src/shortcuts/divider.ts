@@ -10,5 +10,5 @@ export const dividerShortcuts: Exclude<Preset['shortcuts'], undefined | StaticSh
     'divider-text': 'absolute top-50% box-border px-4 c-neutral-9 text-sm bg-white translate-y--50% translate-x--50% left-50%',
     'divider-text-left': 'divider-text left-5% right-auto translate-x-0',
     'divider-text-right': 'divider-text right-5% left-auto translate-x-0',
-  }
+  },
 ]
