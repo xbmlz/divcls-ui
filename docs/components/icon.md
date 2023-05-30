@@ -15,7 +15,7 @@ Get all icons from [here](https://icones.js.org/)
 
 ## Basic usage
 
-:::demo Follow the following conventions to use the icons `<prefix><collection>-<icon>` or `<prefix><collection>:<icon>`
+:::demo Use `<prefix><collection>-<icon>` or `<prefix><collection>:<icon>` to use icons.
 
 icon/basic
 

@@ -51,7 +51,6 @@
     "@types/node": "^17.0.43",
     "@unocss/core": "^0.51.13",
     "@unocss/eslint-config": "^0.51.13",
-    "@unocss/preset-uno": "^0.51.13",
     "@xbmlz/eslint-config-ts": "^0.1.17",
     "bumpp": "^7.2.0",
     "eslint": "^8.41.0",

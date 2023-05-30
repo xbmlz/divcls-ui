@@ -41,7 +41,7 @@ export default defineConfig({
       ],
       '/components': [
         {
-          text: 'General',
+          text: 'Common',
           items: [
             { text: 'Button', link: '/components/button' },
             { text: 'Icon', link: '/components/icon' },
