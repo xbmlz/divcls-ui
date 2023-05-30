@@ -61,16 +61,16 @@
 }
 
 .grid-demo .row [class*="col-"]:nth-of-type(1) {
-  --at-apply: h14 lh-14;
+  --at-apply: h16 lh-16;
 }
 .grid-demo .row [class*="col-"]:nth-of-type(2) {
-  --at-apply: h8 lh-8;
+  --at-apply: h10 lh-10;
 }
 .grid-demo .row [class*="col-"]:nth-of-type(3) {
   --at-apply: h20 lh-20;
 }
 .grid-demo .row [class*="col-"]:nth-of-type(4) {
-  --at-apply: h10 lh-10;
+  --at-apply: h-12 lh-12;
 }
 
 .grid-demo .row [class*="col-"]:nth-child(2n) {

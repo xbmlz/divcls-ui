@@ -11,7 +11,7 @@
 
 <style scoped>
 .grid-demo .row [class*="col-"] {
-  --at-apply: h-10 lh-10 c-white text-center;
+  --at-apply: h-12 lh-12 c-white text-center;
 }
 
 .grid-demo .row [class*="col-"]:nth-child(2n) {
