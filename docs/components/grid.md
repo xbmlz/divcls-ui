@@ -57,7 +57,7 @@ grid/order
 
 ## Responsive Layout
 
-:::demo Use `sm`, `md`, `lg`, `xl`, `2xl` to specify the responsive layout
+:::demo Use `sm`, `md`, `lg`, `xl` to specify the responsive layout
 
 grid/responsive
 

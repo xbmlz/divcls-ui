@@ -52,6 +52,7 @@ export default defineConfig({
           items: [
             { text: 'Divide', link: '/components/divider' },
             { text: 'Grid', link: '/components/grid' },
+            { text: 'Layout', link: '/components/layout' },
           ],
         },
       ],

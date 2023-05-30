@@ -9,5 +9,5 @@ export const gridShortcuts: Exclude<Preset['shortcuts'], undefined | StaticShort
   [/^col-(\d+)$/, ([, c]) => `flex-grow-0 flex-shrink-0 flex-basis-${c}/24 w-${c}/24`],
   [/^col-offset-(\d+)$/, ([, c]) => `ml-${c}/24`],
   [/^col-(sm|md|lg|xl)-(\d+)$/, ([, s, c]) => `${s}:flex-grow-0 flex-shrink-0 flex-basis-${c}/24 w-${c}/24`],
-  [/^col-(sm|md|lg|xl)-(\d+)-offset-(\d+)$/, ([, s, c, n]) => `flex-grow-0 flex-shrink-0 flex-basis-${c}/24 w-${s}/24 ${s}:ml-${n}/24`],
+  [/^col-(sm|md|lg|xl)-(\d+)-offset-(\d+)$/, ([, s, c, n]) => `${s}:flex-grow-0 ${s}:flex-shrink-0 ${s}:flex-basis-${c}/24 ${s}:w-${c}/24 ${s}:ml-${n}/24`],
 ]

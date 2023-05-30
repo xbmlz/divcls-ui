@@ -26,6 +26,7 @@ export default defineConfig({
     '../src/shortcuts/index.ts',
     '../src/shortcuts/divider.ts',
     '../src/shortcuts/grid.ts',
+    '../src/shortcuts/layout.ts',
     '../src/shortcuts/space.ts',
     '../src/rules.ts',
     '../src/theme.ts',
