@@ -1,7 +1,48 @@
 import type { Preset } from '@unocss/core'
 
 export default [
-  // b[x] is `btn-[x]`
+  // common
+  (matcher) => {
+    // `fc:` is `first child`
+    if (!matcher.startsWith('fc:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}:first-child`
+      },
+    }
+  },
+  (matcher) => {
+    // `nlc:` is `not last child`
+    if (!matcher.startsWith('nlc:')) { return matcher }
+    return {
+      matcher: matcher.slice(4),
+      selector: s => {
+        return `${s}:not(:last-child)`
+      },
+    }
+  },
+  (matcher) => {
+    // `lc:` is `last child`
+    if (!matcher.startsWith('lc:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}:last-child`
+      },
+    }
+  },
+  (matcher) => {
+    // `nfnl:` is `not first not last`
+    if (!matcher.startsWith('nfnl:')) { return matcher }
+    return {
+      matcher: matcher.slice(5),
+      selector: s => {
+        return `${s}:not(:first-child):not(:last-child)`
+      },
+    }
+  },
+  // button
   (matcher) => {
     // bs: is `btn-square`
     if (!matcher.startsWith('bs:')) { return matcher }
@@ -43,43 +84,14 @@ export default [
     }
   },
   (matcher) => {
-    // `cfc:` is `child first child`
-    if (!matcher.startsWith('cfc:')) { return matcher }
+    // bg: is `btn-group`
+    if (!matcher.startsWith('bg:')) { return matcher }
     return {
-      matcher: matcher.slice(4),
+      matcher: matcher.slice(3),
       selector: s => {
-        return `${s} .btn:first-child`
+        return `.btn-group ${s}`
       },
     }
   },
-  (matcher) => {
-    // `cnlc:` is `child not last child`
-    if (!matcher.startsWith('cnlc:')) { return matcher }
-    return {
-      matcher: matcher.slice(5),
-      selector: s => {
-        return `${s} .btn:not(:last-child)`
-      },
-    }
-  },
-  (matcher) => {
-    // `clc:` is `child last child`
-    if (!matcher.startsWith('clc:')) { return matcher }
-    return {
-      matcher: matcher.slice(4),
-      selector: s => {
-        return `${s} .btn:last-child`
-      },
-    }
-  },
-  (matcher) => {
-    // `cnfnl:` is `child not first not last`
-    if (!matcher.startsWith('cnfnl:')) { return matcher }
-    return {
-      matcher: matcher.slice(6),
-      selector: s => {
-        return `${s} .btn:not(:first-child):not(:last-child)`
-      },
-    }
-  },
+
 ] as Preset['variants']
