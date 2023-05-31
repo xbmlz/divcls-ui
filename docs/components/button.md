@@ -5,36 +5,76 @@ lang: en-US
 
 # Button
 
-To trigger an operation.
+Commonly used button.
 
 ## Basic usage
 
-:::demo Button is divided into five types: `primary`, `secondary`, `dashed`, `outline`, `text`.
+:::demo Use `primary`, `secondary`(default), `success`, `warning`, `danger` to set the button style.
 
 button/basic
 
 :::
 
-## Icon
+## Icon Button
 
-:::demo Buttons can be embedded with icons. When only icons are set, the width and height of the buttons are equal.
+:::demo
 
 button/icon
 
 :::
 
-## Button Shape
+## Outline Button
 
-:::demo Button is divided into three shapes: `square` - rectangular (default), `circle` - circle, and `round` - full rounded corner.
+:::demo Use `outline` to set the button style.
+
+button/outline
+
+:::
+
+## Link Button
+
+:::demo Use `link` to set the button style.
+
+button/link
+
+:::
+
+## Disabled Button
+
+:::demo The disabled state of the button.
+
+button/disabled
+
+:::
+
+## Shape
+
+:::demo Use `square`, `round`, `circle` to set the button shape.
 
 button/shape
 
 :::
 
-## Button Size
+## Sizes
 
-:::demo Button is divided into four sizes: mini, small, medium, and large.
+:::demo Use `mini`, `small`, `medium`(default), `large` to set the button size.
 
 button/size
+
+:::
+
+## Button Group
+
+:::demo Use `group` to group buttons.
+
+button/group
+
+:::
+
+## Button Loading
+
+:::demo Use `loading` to set the button loading state.
+
+button/loading
 
 :::
