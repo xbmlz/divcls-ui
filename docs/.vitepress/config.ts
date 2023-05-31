@@ -45,6 +45,7 @@ export default defineConfig({
           items: [
             { text: 'Button', link: '/components/button' },
             { text: 'Icon', link: '/components/icon' },
+            { text: 'Typography', link: '/components/typography' },
           ],
         },
         {
