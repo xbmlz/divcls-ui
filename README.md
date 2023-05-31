@@ -1,41 +1,5 @@
-<h1 align="center">Divcls UI</h1>
+# Divcls UI
 
-<p align="center">Use Uno CSS, but write fewer class names.</p>
+Write less, do more.
 
-🚧 Work in progress 🚧
-
-## Plan
-
-### Layout
-
-- Divider
-  - [x] Basic Usage
-  - [x] With Text
-  - [x] Vertical Divider
-
-- Grid
-  - [x] Basic
-  - [x] Offset of Col
-  - [x] Interval of Grid
-  - [x] Horizontal Layout
-  - [x] Vertical Layout
-  - [x] Order
-  - [x] Responsive Layout
-  - [ ] Advanced Responsive Layout
-  - [ ] Flex
-  - [ ] Grid Layout
-  - [ ] Responsive Grid Layout
-
-- Layout
-  - [ ] header
-  - [ ] content
-  - [ ] footer
-  - [ ] sider
-
-- Space
-  - [x] Basic
-  - [x] Vertical
-  - [ ] Size - mini | small | middle | large
-  - [ ] Align - start | end | center | baseline
-  - [ ] Wrap
-  - [x] Split
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cf3a1e59-32b2-481f-b502-ebdad693e1f0/deploy-status)](https://app.netlify.com/sites/divcls/deploys)
