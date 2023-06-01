@@ -1,6 +1,6 @@
 <template>
   <div class="grid-demo">
-    <div class="space-vertical">
+    <div class="space-vertical flex">
       <div class="row">
         <div class="col-8">col - 8</div>
         <div class="col-8 col-offset-8">col - 8 | offset - 8</div>

@@ -1,6 +1,6 @@
 <template>
   <div class="grid-demo">
-    <div class="space-vertical">
+    <div class="space-vertical flex">
       <div class="row">
         <div class="col-sm-4 col-md-6 col-lg-8 col-xl-10">col</div>
         <div class="col-sm-16 col-md-12 col-lg-8 col-xl-4">col</div>
