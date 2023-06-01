@@ -14,3 +14,11 @@ Used as an avatar, it can be displayed in the form of pictures, icons or charact
 avatar/basic
 
 :::
+
+## Group
+
+:::demo When there are multiple avatars, you can use the `group` component to group them.
+
+avatar/group
+
+:::

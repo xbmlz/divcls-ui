@@ -24,6 +24,7 @@ export default defineConfig({
   transformers: [transformerVariantGroup(), transformerDirectives()],
   configDeps: [
     '../src/shortcuts/index.ts',
+    '../src/shortcuts/avatar.ts',
     '../src/shortcuts/button.ts',
     '../src/shortcuts/divider.ts',
     '../src/shortcuts/grid.ts',

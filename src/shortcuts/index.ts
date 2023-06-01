@@ -6,9 +6,11 @@ import { spaceShortcuts } from './space'
 import { layoutShortcuts } from './layout'
 import { buttonShortcuts } from './button'
 import { typographyShortcuts } from './typography'
+import { avatarShortcuts } from './avatar'
 
 export default [
   // common
+  ...avatarShortcuts,
   ...buttonShortcuts,
   ...typographyShortcuts,
   // layout

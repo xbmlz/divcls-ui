@@ -52,6 +52,37 @@ export default [
       },
     }
   },
+  // avatar
+  (matcher) => {
+    // at: is `avatar-text`
+    if (!matcher.startsWith('at:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}>span`
+      },
+    }
+  },
+  (matcher) => {
+    // ai: is `avatar-img`
+    if (!matcher.startsWith('ai:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}>img`
+      },
+    }
+  },
+  (matcher) => {
+    // ag: is `avatar-group`
+    if (!matcher.startsWith('ag:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `.avatar-group ${s}`
+      },
+    }
+  },
   // common
   (matcher) => {
     // `fc:` is `first child`
@@ -64,22 +95,32 @@ export default [
     }
   },
   (matcher) => {
-    // `nlc:` is `not last child`
-    if (!matcher.startsWith('nlc:')) { return matcher }
-    return {
-      matcher: matcher.slice(4),
-      selector: s => {
-        return `${s}:not(:last-child)`
-      },
-    }
-  },
-  (matcher) => {
     // `lc:` is `last child`
     if (!matcher.startsWith('lc:')) { return matcher }
     return {
       matcher: matcher.slice(3),
       selector: s => {
         return `${s}:last-child`
+      },
+    }
+  },
+  (matcher) => {
+    // `nfc:` is `not last child`
+    if (!matcher.startsWith('nfc:')) { return matcher }
+    return {
+      matcher: matcher.slice(4),
+      selector: s => {
+        return `${s}:not(:first-child)`
+      },
+    }
+  },
+  (matcher) => {
+    // `nlc:` is `not last child`
+    if (!matcher.startsWith('nlc:')) { return matcher }
+    return {
+      matcher: matcher.slice(4),
+      selector: s => {
+        return `${s}:not(:last-child)`
       },
     }
   },
