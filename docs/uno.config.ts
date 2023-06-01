@@ -29,6 +29,7 @@ export default defineConfig({
     '../src/shortcuts/grid.ts',
     '../src/shortcuts/layout.ts',
     '../src/shortcuts/space.ts',
+    '../src/shortcuts/typography.ts',
     '../src/rules.ts',
     '../src/theme.ts',
     '../src/variants.ts',

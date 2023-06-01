@@ -5,10 +5,12 @@ import { gridShortcuts } from './grid'
 import { spaceShortcuts } from './space'
 import { layoutShortcuts } from './layout'
 import { buttonShortcuts } from './button'
+import { typographyShortcuts } from './typography'
 
 export default [
   // common
   ...buttonShortcuts,
+  ...typographyShortcuts,
   // layout
   ...dividerShortcuts,
   ...gridShortcuts,

@@ -30,7 +30,7 @@ export default defineConfig({
     sidebar: {
       '/guide/': [
         {
-          text: '🚀&nbsp;&nbsp; Getting Started',
+          text: 'Getting Started',
           items: [
             { text: 'Installation', link: '/guide/install' },
             { text: 'Usage', link: '/guide/usage' },
@@ -54,6 +54,13 @@ export default defineConfig({
             { text: 'Divide', link: '/components/divider' },
             { text: 'Grid', link: '/components/grid' },
             { text: 'Layout', link: '/components/layout' },
+            { text: 'Space', link: '/components/space' },
+          ],
+        },
+        {
+          text: 'Data Display',
+          items: [
+            { text: 'Avatar', link: '/components/avatar' },
           ],
         },
       ],

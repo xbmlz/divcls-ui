@@ -1,47 +1,6 @@
 import type { Preset } from '@unocss/core'
 
 export default [
-  // common
-  (matcher) => {
-    // `fc:` is `first child`
-    if (!matcher.startsWith('fc:')) { return matcher }
-    return {
-      matcher: matcher.slice(3),
-      selector: s => {
-        return `${s}:first-child`
-      },
-    }
-  },
-  (matcher) => {
-    // `nlc:` is `not last child`
-    if (!matcher.startsWith('nlc:')) { return matcher }
-    return {
-      matcher: matcher.slice(4),
-      selector: s => {
-        return `${s}:not(:last-child)`
-      },
-    }
-  },
-  (matcher) => {
-    // `lc:` is `last child`
-    if (!matcher.startsWith('lc:')) { return matcher }
-    return {
-      matcher: matcher.slice(3),
-      selector: s => {
-        return `${s}:last-child`
-      },
-    }
-  },
-  (matcher) => {
-    // `nfnl:` is `not first not last`
-    if (!matcher.startsWith('nfnl:')) { return matcher }
-    return {
-      matcher: matcher.slice(5),
-      selector: s => {
-        return `${s}:not(:first-child):not(:last-child)`
-      },
-    }
-  },
   // button
   (matcher) => {
     // bs: is `btn-square`
@@ -93,5 +52,45 @@ export default [
       },
     }
   },
-
+  // common
+  (matcher) => {
+    // `fc:` is `first child`
+    if (!matcher.startsWith('fc:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}:first-child`
+      },
+    }
+  },
+  (matcher) => {
+    // `nlc:` is `not last child`
+    if (!matcher.startsWith('nlc:')) { return matcher }
+    return {
+      matcher: matcher.slice(4),
+      selector: s => {
+        return `${s}:not(:last-child)`
+      },
+    }
+  },
+  (matcher) => {
+    // `lc:` is `last child`
+    if (!matcher.startsWith('lc:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}:last-child`
+      },
+    }
+  },
+  (matcher) => {
+    // `nfnl:` is `not first not last`
+    if (!matcher.startsWith('nfnl:')) { return matcher }
+    return {
+      matcher: matcher.slice(5),
+      selector: s => {
+        return `${s}:not(:first-child):not(:last-child)`
+      },
+    }
+  },
 ] as Preset['variants']
