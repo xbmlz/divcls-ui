@@ -134,4 +134,14 @@ export default [
       },
     }
   },
+  (matcher) => {
+    // `fl:` is `first` and `last`
+    if (!matcher.startsWith('fl:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `${s}:first-child:last-child`
+      },
+    }
+  },
 ] as Preset['variants']

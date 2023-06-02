@@ -61,6 +61,7 @@ export default defineConfig({
           text: 'Data Display',
           items: [
             { text: 'Avatar', link: '/components/avatar' },
+            { text: 'Badge', link: '/components/badge' },
           ],
         },
       ],

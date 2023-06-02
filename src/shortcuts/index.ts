@@ -7,10 +7,13 @@ import { layoutShortcuts } from './layout'
 import { buttonShortcuts } from './button'
 import { typographyShortcuts } from './typography'
 import { avatarShortcuts } from './avatar'
+import { badgeShortcuts } from './badge'
 
 export default [
-  // common
+  // data display
   ...avatarShortcuts,
+  ...badgeShortcuts,
+  // common
   ...buttonShortcuts,
   ...typographyShortcuts,
   // layout
