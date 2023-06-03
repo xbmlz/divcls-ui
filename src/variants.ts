@@ -73,6 +73,17 @@ export default [
       },
     }
   },
+  // card
+  (matcher) => {
+    // cs: is `card-small`
+    if (!matcher.startsWith('cs:')) { return matcher }
+    return {
+      matcher: matcher.slice(3),
+      selector: s => {
+        return `.card-small ${s}`
+      },
+    }
+  },
   (matcher) => {
     // ag: is `avatar-group`
     if (!matcher.startsWith('ag:')) { return matcher }
